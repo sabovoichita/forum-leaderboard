@@ -75,6 +75,7 @@ const avatars = (posters, users) => {
       const userAvatarUrl = avatar.startsWith("/user_avatar/")
         ? avatarUrl.concat(avatar)
         : avatar;
+      return `<img src="${userAvatarUrl}" alt="${user.name}"  value ="${user.name}"/>`;
     }
   });
 };
