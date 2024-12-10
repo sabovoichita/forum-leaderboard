@@ -23,6 +23,17 @@ const timeAgo = (time) => {
   }
 };
 
+const viewCount = (views) => {
+  if (views >= 1000) {
+    return Math.floor(views / 1000) + "k";
+  }
+  return views;
+};
+console.log(viewCount(2000));
+console.log(viewCount(1000));
+console.log(viewCount(200));
+console.log(viewCount(100000));
+
 const fetchData = async () => {
   try {
     const res = await fetch(forumLatest);
