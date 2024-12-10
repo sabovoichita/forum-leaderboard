@@ -32,7 +32,7 @@ header {
 }
 
 nav {
-  position: absolute;
+  /* position: absolute; */
   background-color: var(--dark-navy);
   padding: 10px 0;
   margin: 10px;
