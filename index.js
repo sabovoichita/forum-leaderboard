@@ -7,9 +7,7 @@ const postsContainer = document.getElementById("posts-container");
 
 const fetchData = async () => {
   try {
-    const name = "freeCodeCamp";
-    name = "fCC";
-  } catch (err) {
-    console.log(err); // TypeError: Assignment to constant variable.
-  }
+    const res = await fetch(forumLatest);
+    // console.log(res);
+  } catch (err) {}
 };
