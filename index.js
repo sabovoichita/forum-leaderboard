@@ -34,12 +34,14 @@ const showLatestPosts = (data) => {
         bumped_at,
       } = item;
       return `<tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      </tr>`;
+                <td>
+                  <p class="post-title" >${title}</p>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>`;
     })
     .join("");
 };
