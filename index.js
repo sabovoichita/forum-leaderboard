@@ -6,5 +6,10 @@ const avatarUrl = "https://sea1.discourse-cdn.com/freecodecamp";
 const postsContainer = document.getElementById("posts-container");
 
 const fetchData = async () => {
-  console.log("this is an example");
+  try {
+    const name = "freeCodeCamp";
+    name = "fCC";
+  } catch (err) {
+    console.log(err); // TypeError: Assignment to constant variable.
+  }
 };
