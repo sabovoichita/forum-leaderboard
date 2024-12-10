@@ -15,6 +15,10 @@ const allCategories = {
     category: "Project Feedback",
     className: "feedback",
   },
+  417: {
+    category: "freeCodeCamp Support",
+    className: "support",
+  },
 };
 
 const timeAgo = (time) => {
