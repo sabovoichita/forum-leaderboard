@@ -8,7 +8,7 @@ const postsContainer = document.getElementById("posts-container");
 
 const timeAgo = (time) => {
   const currentTime = new Date();
-  const lastPost = newDate(time);
+  const lastPost = new Date(time);
 
   let minutes = Math.floor((currentTime - lastPost) / 60000);
   let hours = Math.floor((currentTime - lastPost) / 3600000);
@@ -57,7 +57,7 @@ const showLatestPosts = (data) => {
                 <td></td>
                 <td>${posts_count - 1}</td>
                 <td>${views}</td>
-                <td></td>
+                <td>${timeAgo(bumped_at)}</td>
                 </tr>`;
     })
     .join("");
